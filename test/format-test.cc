@@ -581,7 +581,9 @@ TEST(format_test, auto_arg_index) {
                    "argument not found");
 }
 
-TEST(format_test, empty_specs) { EXPECT_EQ(fmt::format("{0:}", 42), "42"); }
+TEST(format_test, empty_specs) {
+  EXPECT_EQ(fmt::format("{0:}", 42), "42");
+}
 
 TEST(format_test, left_align) {
   EXPECT_EQ(fmt::format("{0:<4}", 42), "42  ");
